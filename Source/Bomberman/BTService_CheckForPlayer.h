@@ -11,9 +11,13 @@ class BOMBERMAN_API UBTService_CheckForPlayer : public UBTService
 {
 	GENERATED_BODY()
 
-	UBTService_CheckForPlayer();
+		UPROPERTY(EditAnywhere)
+		float DistanceToSee = 3000;
 
-	virtual void TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds) override;
+
+		UBTService_CheckForPlayer();
+
+		virtual void TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds) override;
 	
 	
 	

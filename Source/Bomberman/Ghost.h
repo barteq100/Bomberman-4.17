@@ -7,7 +7,7 @@
 #include "Ghost.generated.h"
 
 UCLASS()
-class BOMBERMAN_API AGhost : public ACharacter
+class BOMBERMAN_API AGhost : public APawn
 {
 	GENERATED_BODY()
 
